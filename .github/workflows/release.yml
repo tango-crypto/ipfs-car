@@ -8,15 +8,13 @@ jobs:
     name: Build and deploy
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v2
       - name: Setup node
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v2
         with:
-          node-version: 14
-      - name: Install mocha
-        run: npm install -g mocha
-      - name: Install dependencies
-        run: npm ci
+          node-version: 16
+      - uses: bahmutov/npm-install@v1
+      - run: npm run build
       # - name: Run tests
       #   run: npm test
       - name: Package and publish
