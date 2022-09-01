@@ -1,5 +1,5 @@
 {
-  "name": "ipfs-car",
+  "name": "@tango-crypto/ipfs-car",
   "version": "0.9.0",
   "description": "Convert files to content-addressed archives (.car) and back",
   "main": "dist/index.js",
