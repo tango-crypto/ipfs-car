@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/web3-storage/ipfs-car.git"
+    "url": "git://github.com/tango-crypto/ipfs-car.git"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
